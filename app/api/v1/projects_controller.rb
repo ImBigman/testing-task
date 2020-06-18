@@ -1,6 +1,6 @@
 module Api
   module V1
-    class ProjectsController < ApplicationController
+    class ProjectsController < BaseController
 
       def index
         render json: { message: “ok” }
