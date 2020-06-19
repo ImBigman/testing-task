@@ -1,5 +1,6 @@
 class ProjectsController < ApplicationController
   def index
-    render json: { message: 'OK' }
+    @projects = Project.all
+    render json: @projects
   end
 end
